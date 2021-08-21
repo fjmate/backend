@@ -1,0 +1,49 @@
+body{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: black;
+    background: gray;
+}
+
+.ciudad{
+    border: solid 2px red;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.ciudadelegida{
+    position:relative;
+    display: float;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: solid 2px red;
+    background-color: lightcoral;
+    padding:10px;
+    margin-bottom: 1%;
+}
+
+.ciudadsevilla{
+    position:relative;
+    display: float;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: solid 2px blue;
+    background-color: lightblue;
+    padding:10px;
+    margin-bottom: 1%;
+}
+
+input {
+    border: solid 1px darkblue;
+    color: dark;
+    font-weight: bold;
+}
+
+img {
+    position: relative;
+    display: float;
+    margin-left: 25%;
+    margin-right: 25%; 
+    border: solid 3px blue;
+    margin-bottom: 1%;
+}
+
