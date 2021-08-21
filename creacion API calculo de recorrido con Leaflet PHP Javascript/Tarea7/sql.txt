@@ -1,0 +1,26 @@
+CREATE DATABASE CENTRODIA;
+USE CENTRODIA;
+CREATE TABLE usuarios(nombre varchar(20),
+idusuario int NOT NULL AUTO_INCREMENT,
+apellidos varchar(20),
+telefono int,
+direccion varchar(50),
+latitud float,
+longitud float,
+PRIMARY KEY (idusuario)
+);
+
+INSERT INTO `usuarios`(`nombre`, `idusuario`, `apellidos`, `telefono`, `direccion`, `latitud`, `longitud`) VALUES ('pepe','','martin',641215484,'Avenida Hytasa 61', 37.37094557666078, -5.96014536046895);
+INSERT INTO `usuarios`(`nombre`, `idusuario`,`apellidos`, `telefono`, `direccion`, `latitud`, `longitud`) VALUES ('maria','','lopez',641155484,'Calle Canal 20', 37.366388138392786, -5.9516551340130945);
+INSERT INTO `usuarios`(`nombre`, `idusuario`, `apellidos`, `telefono`, `direccion`, `latitud`, `longitud`) VALUES ('luis','','escobar',617475484,'Avenida Ciudad Jardin 30', 37.37763782231036, -5.966037734012749);
+INSERT INTO `usuarios`(`nombre`,`idusuario`, `apellidos`, `telefono`, `direccion`, `latitud`, `longitud`) VALUES ('carmen','','perez',641211414,'Luis Montoto 104', 37.38733472411259, -5.974934445124407);
+
+USE CENTRODIA;
+CREATE TABLE informacion(nombre varchar(20),
+idcentro int NOT NULL AUTO_INCREMENT,
+direccion varchar(50),
+latitud float,
+longitud float,
+PRIMARY KEY (idcentro)
+);
+INSERT INTO `informacion`(`nombre`,`idcentro`, `direccion`, `latitud`,`longitud`) VALUES ('Centro La Paz','','Calle Portobelo 2', 37.37253347395321, -5.971664675812888)
