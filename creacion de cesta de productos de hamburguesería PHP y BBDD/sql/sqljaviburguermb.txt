@@ -1,0 +1,21 @@
+CREATE DATABASE JAVIBURGUERMB;
+USE JAVIBURGUERMB;
+CREATE TABLE `usuarios` ( `usuario` VARCHAR(20) NOT NULL , `contrasena` VARCHAR(32) NOT NULL , PRIMARY KEY (`usuario`)) ENGINE = InnoDB; 
+INSERT INTO `usuarios` (`usuario`, `contrasena`) VALUES ('dwes', 'aa40dfb19d3b6e647ff14ac6e85d5e3a'); 
+
+Create table if not exists productos(
+                          codigo int not null AUTO_INCREMENT,
+                            nombre varchar(20) not null,
+                            precio float(11,2) not null, imagen varchar(20),
+                            Primary Key (codigo)
+                            );
+
+INSERT INTO `productos`(`codigo`, `nombre`, `precio`, `imagen`) VALUES ('1','simple','1','simple.jpg'),('2','doble','1.5','doble.jpg'),('3','triple','2','triple.jpg'),('4','ensalada','2','ensalada.jpg'),('5','patatas','1.5','patatas.jpg'),('6','te','1','te.jpg'),('7','cola','1.2','cola.jpg'),('8','naranja','1.2','naranja.jpg');
+
+
+ALTER TABLE usuarios
+ADD calle varchar(40),
+ADD numero int (3),
+ADD CP int(5),
+ADD localidad varchar(20),
+ADD provincia varchar(20);
